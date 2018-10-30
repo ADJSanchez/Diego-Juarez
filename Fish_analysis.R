@@ -17,4 +17,6 @@ ggplot(data=fish_data_cat,mapping = aes(x=length, y=scalelength,color=lakeid))+
   geom_point()
   
 ggplot(fish_data_cat, aes(x = scalelength, fill = length_cat)) +
-  geom_histogram()
+  geom_histogram(bins = 80)+
+  ggsave("Fish_hist.jpg")
+
